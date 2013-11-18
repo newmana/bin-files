@@ -1,0 +1,10 @@
+#!/bin/sh
+
+args=$@
+
+echo Switching $1 with $2
+cat > ~/bin/$1 <<HEREDOC
+#!/bin/sh
+$2 \$@
+HEREDOC
+
