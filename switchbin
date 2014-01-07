@@ -7,4 +7,5 @@ cat > ~/bin/$1 <<HEREDOC
 #!/bin/sh
 $2 \$@
 HEREDOC
+chmod +x ~/bin/$1
 
